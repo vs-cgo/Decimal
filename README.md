@@ -8,11 +8,12 @@ __Арифметические операторы__
   3. __int s21_mul(s21_decimal value_1, s21_decimal value_2, s21_decimal *result)__ - уножение.
   4. __int s21_div(s21_decimal value_1, s21_decimal value_2, s21_decimal *result)__ - деление.
   5. __int s21_mod(s21_decimal value_1, s21_decimal value_2, s21_decimal *result)__ - остаток от деления.
-  __Функции возвращают код ошибки:__
+
+  ```__Функции возвращают код ошибки:__
   * 0 - OK
   * 1 - число слишком велико или равно бесконечности
   * 2 - число слишком мало или равно отрицательной бесконечности
-  * 3 - деление на 0
+  * 3 - деление на 0 ```
 __Операторы сравнения:__
   1. __int s21_is_less(s21_decimal, s21_decimal)__ -             меньше.
   2. __int s21_is_less_or_equal(s21_decimal, s21_decimal)__ -    меньше или равно.
@@ -20,6 +21,7 @@ __Операторы сравнения:__
   4. __int s21_is_greater_or_equal(s21_decimal, s21_decimal)__ - больше или равно.
   5. __int s21_is_equal(s21_decimal, s21_decimal)__ -            равно.
   6. __int s21_is_not_equal(s21_decimal, s21_decimal)__ -        не равно.
+
   __Возвращаемое значение:__
   * 0 - FALSE
   * 1 - TRUE
@@ -36,6 +38,6 @@ __Другие функции:__
   2. __int s21_round(s21_decimal value, s21_decimal *result)__ -    округляет Decimal до ближайшего целого числа.
   3. __int s21_truncate(s21_decimal value, s21_decimal *result)__ - возвращает целые цифры указанного Decimal числа; любые дробные цифры отбрасываются, включая конечные нули.
   4. __int s21_negate(s21_decimal value, s21_decimal *result)__ -   возвращает результат умножения указанного Decimal на -1.
-  <<<Возвращаемое значение - код ошибки:>>>
+  ```Возвращаемое значение - код ошибки:```
   * 0 - OK
   * 1 - ошибка вычисления
